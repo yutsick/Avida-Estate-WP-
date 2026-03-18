@@ -1,0 +1,17 @@
+{
+    "apiVersion": 3,
+    "name": "avidaestate/featured-property",
+    "title": "Featured Property",
+    "description": "Full-width showcase banner for a single property.",
+    "category": "avidaestate",
+    "icon": "building",
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "render.php"
+    },
+    "supports": {
+        "align": ["full"],
+        "html": false,
+        "anchor": true
+    }
+}

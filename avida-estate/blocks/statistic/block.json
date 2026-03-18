@@ -1,0 +1,17 @@
+{
+    "apiVersion": 3,
+    "name": "avidaestate/statistic",
+    "title": "Statistic",
+    "description": "Statistics counters in a row with full-width background.",
+    "category": "avidaestate",
+    "icon": "chart-bar",
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "render.php"
+    },
+    "supports": {
+        "align": ["full"],
+        "html": false,
+        "anchor": true
+    }
+}

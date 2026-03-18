@@ -1,0 +1,17 @@
+{
+    "apiVersion": 3,
+    "name": "avidaestate/latest-posts",
+    "title": "Latest Posts",
+    "description": "Blog posts slider with navigation arrows.",
+    "category": "avidaestate",
+    "icon": "admin-post",
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "render.php"
+    },
+    "supports": {
+        "align": ["full"],
+        "html": false,
+        "anchor": true
+    }
+}

@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p \"D:/OSPanel/home/avida.loc/wp-content/themes/avida-estate/blocks/hero\")",
+      "Bash(mkdir -p \"D:/OSPanel/home/avida.loc/wp-content/themes/avida-estate/inc\")",
+      "Bash(for f in blocks/*/render.php blocks/*/fields.php inc/blocks.php)",
+      "Bash(do echo \"=== $f ===\")",
+      "Bash(php -l \"$f\")",
+      "Bash(done)"
+    ]
+  }
+}

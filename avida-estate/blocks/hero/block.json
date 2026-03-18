@@ -1,0 +1,17 @@
+{
+    "apiVersion": 3,
+    "name": "avidaestate/hero",
+    "title": "Hero",
+    "description": "Full-screen hero banner with background image, tagline and CTA buttons.",
+    "category": "avidaestate",
+    "icon": "cover-image",
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "render.php"
+    },
+    "supports": {
+        "align": ["full"],
+        "html": false,
+        "anchor": true
+    }
+}

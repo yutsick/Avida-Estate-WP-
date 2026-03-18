@@ -1,0 +1,17 @@
+{
+    "apiVersion": 3,
+    "name": "avidaestate/about",
+    "title": "About",
+    "description": "Text description with CTA link on the right.",
+    "category": "avidaestate",
+    "icon": "text",
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "render.php"
+    },
+    "supports": {
+        "align": ["full"],
+        "html": false,
+        "anchor": true
+    }
+}

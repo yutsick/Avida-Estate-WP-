@@ -1,0 +1,17 @@
+{
+    "apiVersion": 3,
+    "name": "avidaestate/image-cta",
+    "title": "Image CTA",
+    "description": "Call-to-action section with background image and modal form.",
+    "category": "avidaestate",
+    "icon": "format-image",
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "render.php"
+    },
+    "supports": {
+        "align": ["full"],
+        "html": false,
+        "anchor": true
+    }
+}

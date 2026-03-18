@@ -1,0 +1,17 @@
+{
+    "apiVersion": 3,
+    "name": "avidaestate/logo-ticker",
+    "title": "Logo Ticker",
+    "description": "Infinite horizontal scrolling logo marquee.",
+    "category": "avidaestate",
+    "icon": "slides",
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "render.php"
+    },
+    "supports": {
+        "align": ["full"],
+        "html": false,
+        "anchor": true
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "apiVersion": 3,
+    "name": "avidaestate/testimonials",
+    "title": "Testimonials",
+    "description": "Testimonial cards slider on dark background. Pulls from Testimonials CPT.",
+    "category": "avidaestate",
+    "icon": "format-quote",
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "render.php"
+    },
+    "supports": {
+        "align": ["full"],
+        "html": false,
+        "anchor": true
+    }
+}

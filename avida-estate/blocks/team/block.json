@@ -1,0 +1,17 @@
+{
+    "apiVersion": 3,
+    "name": "avidaestate/team",
+    "title": "Team",
+    "description": "Team members from Agents CPT with optional owners section.",
+    "category": "avidaestate",
+    "icon": "groups",
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "render.php"
+    },
+    "supports": {
+        "align": ["full"],
+        "html": false,
+        "anchor": true
+    }
+}

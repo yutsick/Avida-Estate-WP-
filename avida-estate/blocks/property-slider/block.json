@@ -1,0 +1,18 @@
+{
+    "apiVersion": 3,
+    "name": "avidaestate/property-slider",
+    "title": "Content Slider",
+    "description": "Universal slider for properties and posts. Modes: simple, gallery, paginated.",
+    "category": "avidaestate",
+    "icon": "images-alt2",
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "render.php"
+    },
+    "supports": {
+        "align": ["full"],
+        "html": false,
+        "anchor": true,
+        "multiple": true
+    }
+}

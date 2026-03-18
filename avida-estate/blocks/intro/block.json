@@ -1,0 +1,17 @@
+{
+    "apiVersion": 3,
+    "name": "avidaestate/intro",
+    "title": "Intro",
+    "description": "Two-column intro section with heading and description on dark background.",
+    "category": "avidaestate",
+    "icon": "text-page",
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "render.php"
+    },
+    "supports": {
+        "align": ["full"],
+        "html": false,
+        "anchor": true
+    }
+}
