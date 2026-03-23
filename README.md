@@ -1,0 +1,1 @@
+Real estate website for Marbella market. Custom WordPress theme with Gutenberg blocks, Tailwind CSS v4, and SCF for block fields. Integrated with Resales Online API for property listings. Built for performance and SEO.
