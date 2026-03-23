@@ -1,0 +1,18 @@
+{
+    "apiVersion": 3,
+    "name": "avidaestate/rentals",
+    "title": "Rental Properties",
+    "description": "Rental property listing with filters, sorting, and paginated grid.",
+    "category": "avidaestate",
+    "icon": "admin-home",
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "render.php"
+    },
+    "supports": {
+        "align": ["full"],
+        "html": false,
+        "anchor": true,
+        "multiple": false
+    }
+}

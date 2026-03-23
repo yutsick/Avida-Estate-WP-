@@ -1,0 +1,17 @@
+{
+    "apiVersion": 3,
+    "name": "avidaestate/image-text",
+    "title": "Image + Text",
+    "description": "Two-column block with image and text content. Image position is configurable.",
+    "category": "avidaestate",
+    "icon": "align-pull-left",
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "render.php"
+    },
+    "supports": {
+        "align": ["full", "wide"],
+        "html": false,
+        "anchor": true
+    }
+}

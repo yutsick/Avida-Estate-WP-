@@ -37,10 +37,10 @@
 </div>
 
 <!-- Cards -->
-<div id="<?php echo esc_attr($uid); ?>" class="flex gap-5 overflow-x-hidden snap-x snap-mandatory scrollbar-hide  pb-2">
+<div id="<?php echo esc_attr($uid); ?>" class="flex gap-5 overflow-x-hidden snap-x snap-mandatory scrollbar-hide bg-[#E9EDE9] pb-2">
     <?php foreach ($properties as $prop) : ?>
         <a href="<?php echo esc_url($prop['permalink']); ?>" class="group flex-none w-[280px] md:w-[calc(25%-15px)] snap-start">
-            <div class="relative aspect-[4/3] overflow-hidden rounded-sm bg-gray-100">
+            <div class="relative aspect-[4/3] overflow-hidden rounded-sm bg-[#E9EDE9]">
                 <?php if ($prop['img_url']) : ?>
                     <img src="<?php echo esc_url($prop['img_url']); ?>" alt="<?php echo esc_attr($prop['title']); ?>" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 group-hover:grayscale-0 transition-transform duration-500<?php echo $grayscale; ?>" loading="lazy" />
                 <?php endif; ?>

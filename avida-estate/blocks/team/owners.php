@@ -14,17 +14,21 @@ if (empty($owners)) {
     return;
 }
 ?>
-
+<style>
+    a:hover{
+        text-decoration: none !important;
+    }
+</style>
 <div class="mb-16 md:mb-24">
     <?php if ($owners_title || $owners_subtitle) : ?>
         <div class="mb-10 md:mb-14">
             <?php if ($owners_title) : ?>
-                <h2 class="font-['Noto_Serif_Display'] text-[#092B23] !text-2xl md:!text-[40px] !font-medium uppercase">
+                <h2 class="font-['Noto_Serif_Display'] !text-[#E9EDE9] !text-2xl md:!text-[40px] !font-medium uppercase">
                     <?php echo esc_html($owners_title); ?>
                 </h2>
             <?php endif; ?>
             <?php if ($owners_subtitle) : ?>
-                <p class="text-[#092B23]/60 mt-2 text-sm md:text-base tracking-wide uppercase">
+                <p class="text-[#E9EDE9] mt-2 text-sm md:text-base tracking-wide uppercase">
                     <?php echo esc_html($owners_subtitle); ?>
                 </p>
             <?php endif; ?>
@@ -60,28 +64,29 @@ if (empty($owners)) {
 
                 <!-- Text content -->
                 <div class="w-full md:w-1/2 flex flex-col justify-center">
+                            <?php if ($name) : ?>
+                        <h3 class="font-['Noto_Serif_Display'] text-[#E9EDE9] !text-[38px] md:!text-3xl !font-medium uppercase mb-4">
+                            <?php echo esc_html($name); ?>
+                        </h3>
+                    <?php endif; ?>
                     <?php if ($title) : ?>
-                        <p class="text-[#092B23]/50 text-xs md:text-sm tracking-[0.15em] uppercase mb-2">
+                        <p class="text-[#FEFFFE] text-xs font-medium md:text-[18px] tracking-[0.15em] uppercase mb-2">
                             <?php echo esc_html($title); ?>
                         </p>
                     <?php endif; ?>
 
-                    <div class="w-12 h-px bg-[#092B23]/20 mb-6"></div>
+                    <div class="w-full h-px bg-[#E8E1AB] mb-6"></div>
 
-                    <?php if ($name) : ?>
-                        <h3 class="font-['Noto_Serif_Display'] text-[#092B23] !text-xl md:!text-3xl !font-medium uppercase mb-4">
-                            <?php echo esc_html($name); ?>
-                        </h3>
-                    <?php endif; ?>
+            
 
                     <?php if ($description) : ?>
-                        <div class="text-[#092B23]/70 text-sm md:text-base leading-relaxed tracking-wide mb-6">
+                        <div class="text-[#E9EDE9] text-sm md:text-base leading-relaxed tracking-wide mb-6">
                             <?php echo wp_kses_post($description); ?>
                         </div>
                     <?php endif; ?>
 
                     <?php if ($permalink) : ?>
-                        <a href="<?php echo esc_url($permalink); ?>" class="inline-flex items-center gap-2 text-[#092B23] text-xs md:text-sm tracking-[0.15em] uppercase hover:opacity-70 transition-opacity">
+                        <a href="<?php echo esc_url($permalink); ?>" class="inline-flex items-center gap-2 !text-[#E9EDE9] text-xs md:text-sm tracking-[0.15em] uppercase hover:opacity-70 transition-opacity">
                             View Full Profile
                             <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />

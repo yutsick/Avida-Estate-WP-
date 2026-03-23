@@ -6,7 +6,8 @@
       "Bash(for f in blocks/*/render.php blocks/*/fields.php inc/blocks.php)",
       "Bash(do echo \"=== $f ===\")",
       "Bash(php -l \"$f\")",
-      "Bash(done)"
+      "Bash(done)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" \"http://avida.loc/wp-json/resales/v1/properties/?p_PageNo=1\")"
     ]
   }
 }

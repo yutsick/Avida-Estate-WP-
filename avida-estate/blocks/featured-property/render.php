@@ -22,7 +22,7 @@ $tag       = $link ? 'a' : 'section';
 $link_attr = $link ? ' href="' . esc_url($link['url']) . '" target="' . esc_attr($link['target'] ?: '_self') . '"' : '';
 ?>
 
-<<?php echo $tag; ?><?php echo $anchor; ?><?php echo $link_attr; ?> class="relative block min-h-[80vh] !flex items-end justify-center overflow-hidden group">
+<<?php echo $tag; ?><?php echo $anchor; ?><?php echo $link_attr; ?> class="relative block min-h-[100vh] !flex items-end justify-center overflow-hidden group">
     <?php if ($bg_url) : ?>
         <img
             src="<?php echo $bg_url; ?>"

@@ -1,0 +1,18 @@
+{
+    "apiVersion": 3,
+    "name": "avidaestate/properties",
+    "title": "Properties Listing",
+    "description": "Property search with filters, sorting, and paginated grid.",
+    "category": "avidaestate",
+    "icon": "grid-view",
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "render.php"
+    },
+    "supports": {
+        "align": ["full"],
+        "html": false,
+        "anchor": true,
+        "multiple": false
+    }
+}

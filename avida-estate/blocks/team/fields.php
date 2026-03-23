@@ -136,6 +136,20 @@ acf_add_local_field_group([
                 ],
             ],
         ],
+        [
+            'key'   => 'field_team_members_title',
+            'label' => 'Team Section Title',
+            'name'  => 'team_members_title',
+            'type'  => 'text',
+            'instructions'  => 'Title for the team members section. Can be empty.',
+        ],
+        [
+            'key'   => 'field_team_members_subtitle',
+            'label' => 'Team Section Subtitle',
+            'name'  => 'team_members_subtitle',
+            'type'  => 'text',
+            'instructions'  => 'Subtitle for the team members section. Can be empty.',
+        ],
     ],
     'location' => [
         [

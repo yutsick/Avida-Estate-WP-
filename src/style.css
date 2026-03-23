@@ -1,6 +1,8 @@
 @import "tailwindcss";
 @source "../blocks/**/*.php";
 @source "../blocks/**/*.js";
+@source inline("grid grid-cols-1 sm:grid-cols-2 gap-4 flex items-center gap-3 mt-1 w-full rounded-[10px] border border-white/80 px-[30px] py-3 font-helvetica text-base font-normal uppercase leading-[150%] tracking-normal text-[#E9EDE9] bg-transparent cursor-pointer hover:bg-white hover:text-[#0a1f1a] transition-all duration-300");
+
 
 @font-face {
     font-family: "Helvetica Neue";

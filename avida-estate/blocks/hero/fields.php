@@ -32,6 +32,22 @@ acf_add_local_field_group([
             'placeholder'  => 'Whether you\'re buying, selling or renting, we can help you move forward.',
         ],
         [
+            'key'          => 'field_hero_subtitle',
+            'label'        => 'Subtitle',
+            'name'         => 'hero_subtitle',
+            'type'         => 'text',
+            'instructions' => 'Optional text displayed below the tagline.',
+        ],
+        [
+            'key'           => 'field_hero_big_title',
+            'label'         => 'Big Title',
+            'name'          => 'hero_big_title',
+            'type'          => 'true_false',
+            'ui'            => 1,
+            'default_value' => 0,
+            'instructions'  => 'Enable for large Noto Serif Display title style.',
+        ],
+        [
             'key'   => 'field_hero_button_1',
             'label' => 'Button 1',
             'name'  => 'hero_button_1',

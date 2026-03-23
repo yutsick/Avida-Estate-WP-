@@ -48,6 +48,10 @@ add_action('init', function () {
         'about',
         'statistic',
         'image-cta',
+        'properties',
+        'page-hero',
+        'rentals',
+        'image-text',
     ];
 
     foreach ($blocks as $block) {
@@ -64,6 +68,7 @@ add_action('enqueue_block_editor_assets', function () {
     );
 });
 
+
 add_action('acf/init', function () {
     $fields = [
         'hero',
@@ -76,9 +81,16 @@ add_action('acf/init', function () {
         'about',
         'statistic',
         'image-cta',
+        'properties',
+        'page-hero',
+        'rentals',
+        'image-text',
     ];
 
     foreach ($fields as $block) {
-        require_once get_template_directory() . '/blocks/' . $block . '/fields.php';
+        $fields_file = get_template_directory() . '/blocks/' . $block . '/fields.php';
+        if (file_exists($fields_file)) {
+            require_once $fields_file;
+        }
     }
 });

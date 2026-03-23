@@ -39,7 +39,7 @@ $phone_clean = preg_replace('/\s+/', '', $phone);
 ?>
 
     <!-- Footer New -->
-    <footer class="bg-[#1a1a1a] text-[#c5c5b8] mt-30">
+    <footer class="bg-[#1a1a1a] text-[#c5c5b8]">
 
         <!-- Top: CTA + Subscribe -->
         <div class="max-w-[1400px] mx-auto px-6 pt-16 md:pt-24 pb-14 grid grid-cols-1 lg:grid-cols-2 gap-16">

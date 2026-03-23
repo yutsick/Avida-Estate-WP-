@@ -13,6 +13,8 @@ $show_all        = get_field('team_show_all');
 $show_owners     = get_field('team_show_owners');
 $owners_title    = get_field('team_owners_title');
 $owners_subtitle = get_field('team_owners_subtitle');
+$members_title   = get_field('team_members_title');
+$members_subtitle = get_field('team_members_subtitle');
 $selected        = get_field('team_members'); // relationship field, returns array of IDs
 
 $anchor    = !empty($block['anchor']) ? ' id="' . esc_attr($block['anchor']) . '"' : '';
@@ -120,13 +122,30 @@ if (empty($member_ids) && empty($owner_ids)) {
         // Owners section (chess-pattern)
         if (!empty($owner_ids)) {
             $owners = $owner_ids;
+            echo '</div><div class="bg-black"><div class="max-w-[1400px] mx-auto w-full md:py-24 py-16">';
+
             include __DIR__ . '/owners.php';
         }
+        echo "</div></div><div class=\"bg-[#E9EDE9]\" ><div class=\"max-w-[1400px]  mx-auto px-6 pt-16\">";
         ?>
 
         <?php if (!empty($member_ids)) :
+            if ($members_title || $members_subtitle) : ?>
+                <div class="mb-10">
+                    <?php if ($members_title) : ?>
+                        <h2 class="font-['Noto_Serif_Display'] text-[#092B23] !text-2xl md:!text-[40px] !font-medium uppercase">
+                            <?php echo esc_html($members_title); ?>
+                        </h2>
+                    <?php endif; ?>
+                    <?php if ($members_subtitle) : ?>
+                        <p class="text-[#092B23]/60 mt-2 text-sm md:text-base tracking-wide">
+                            <?php echo esc_html($members_subtitle); ?>
+                        </p>
+                    <?php endif; ?>
+                </div>
+            <?php endif;
             $container_class = $is_slider
-                ? 'flex gap-5 overflow-x-auto snap-x snap-mandatory scroll-smooth'
+                ? 'flex gap-5 overflow-x-auto snap-x snap-mandatory scroll-smooth bg-[#E9EDE9]'
                 : 'flex gap-5 overflow-x-auto snap-x snap-mandatory sm:flex-wrap sm:overflow-visible pb-4 sm:pb-0';
             $card_class = 'flex-none w-[85%] sm:w-[calc(50%-10px)] md:w-[calc(33.333%-14px)] lg:w-[calc(25%-15px)] snap-start group';
         ?>
@@ -162,6 +181,7 @@ if (empty($member_ids) && empty($owner_ids)) {
             </div>
         <?php endif; ?>
 
+    </div>
     </div>
 </section>
 
